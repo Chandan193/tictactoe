@@ -13,12 +13,23 @@
     "clear": "rimaf dist .parcel-cache"
   },
   "dependencies": {
+    "har-validator": "^5.1.5",
+    "node-sass": "^8.0.0",
+    "node-uuid": "^1.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "babel-preset-nano-react-app": "^0.1.0",
-    "vite": "^3.2.1"
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "parcel": "^2.8.3",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2"
   },
   "babel": {
     "presets": [
