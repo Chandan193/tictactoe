@@ -1,33 +1,7 @@
 import React, { useState } from 'react';
 import Square from './Square';
 
-const Board = () => {
-  // ------------Hook state in react-------------
-
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [isXNext, setIsXNext] = useState(false);
-
-  // It will process the logic
-  const handleSquareClick = (position) => {
-
-    // If the square already then we will just return
-    if (board[position]) {
-      return;
-    }
-
-    setBoard((prev) => {
-      return prev.map((square, pos) => {
-        if (pos === position) {
-          return isXNext ? 'X' : 'O';
-        }
-
-        return square;
-      });
-    });
-
-    setIsXNext(prev => !prev);
-  };
-
+const Board = ({ board, handleSquareClick}) => {  // we will receive board and handleSquareClick as a prop
   const renderSquare = position => {
     return (
       <Square
